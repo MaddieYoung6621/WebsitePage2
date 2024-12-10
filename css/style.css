@@ -1,0 +1,393 @@
+.container {
+	width: 100vw; /* makes sure that the "container" div is stretched to the left and right edges of our web browser */
+	height: auto;
+}
+
+section {
+	position: relative; /* This is needed so that all of our CSS positionings will work within all of our sections */
+}
+
+/* Typography */
+
+/* For Headers/Titles */
+h1 {
+	font-size: 20px;
+	color: black;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-65%);
+	font-family: "Jockey One";
+}
+
+/* For Subheaders */
+h2 {
+	font-size: 2em;
+	color: black;
+	position: absolute;
+	left: 50%;
+	font-family: "Jockey One";
+	transform: translateX(-50%); /* translateX only moves the object horizontally */
+	top: 30px;
+}
+
+/* For Captions */
+h4 {
+	font-size: 1em;
+	color: white;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 40px;
+}
+
+/*for Ranks 1-3*/
+h5 {
+	font-size: 2em;
+	color: black;
+	position: absolute;
+	left: 50%;
+	font-family: "Jockey One";
+	transform: translateX(-50%); /* translateX only moves the object horizontally */
+	top: 20px;
+	width: 200px;
+}
+
+/*for Ranks 4- */
+h6 {
+	font-size: 20px;
+	color: black;
+	position: absolute;
+	left: 50%;
+	font-family: "Jockey One";
+	transform: translateX(-50%); /* translateX only moves the object horizontally */
+	top: 15px;
+	width: 200px;
+}
+
+/*for more ranks*/
+h7 {
+	font-size: 20px;
+	color: yellow;
+	position: absolute;
+	left: 50%;
+	font-family: "Jockey One";
+	transform: translateX(-50%); /* translateX only moves the object horizontally */
+	top: 15px;
+	width: 200px;
+}
+
+h8 {
+	font-size: 45px;
+	color: black;
+	position: absolute;
+	left: 50%;
+	font-family: "Jockey One";
+	transform: translateX(-50%); /* translateX only moves the object horizontally */
+	top: 25%;
+	width: 10px;
+}
+
+h9 {
+	font-size: 30px;
+	color: black;
+	position: absolute;
+	left: 50%;
+	font-family: "Jockey One";
+	transform: translateX(-50%); /* translateX only moves the object horizontally */
+	top: 25%;
+	width: 10px;
+}
+
+h10 {
+	font-size: 20px;
+	color: black;
+	position: absolute;
+	left: 50%;
+	line-height:30pt;
+	font-family: "Jockey One";
+	transform: translateX(-50%); /* translateX only moves the object horizontally */
+	top: 15%;
+	width: 700px;
+}
+
+
+/* Navigation Bar */
+.navigation {
+	width: 100vw;
+	height: 70px;
+	background: #FFFFFF;
+	margin: auto;
+	position: fixed; /* Here, we use fixed positioning so that our nav bar always stays on top of the page */
+	z-index: 1; /* having a z-index larger than 0 ensures that our nav bar is on top of other content on the page */
+}
+
+ul {
+	list-style: none; /* this removes bullet points on our "list" */
+	margin: auto;
+	font-size: 1.3em;
+	border: none;
+	width: 900px;
+
+}
+
+li {
+	float: right; /* makes all of our links on the right side of the nav bar */
+	margin-left: 50px; /* gives 20px of spacing between each text link */
+	margin-top: 20px;
+}
+
+a {
+	color: black;
+	text-decoration: none; /* removes the underline and blue color of our text links */
+	font-family: "Jockey One";
+}
+
+
+li:last-child { /* last-child only targets the last item on our list, which is our home page link */
+	margin-left: 0px;
+}
+
+
+/* Home Page CSS */
+
+.home { /* this is the hero image area */
+	width: 100vw;
+	height: 100vh;
+	background: url(../images/image.png)no-repeat center fixed;
+	background-size: cover;
+	posiiton: relative;
+	z-index: 0;
+}
+
+
+.one {
+	width: 110vw; /* this section has a fixed width. I recommend doing this for everything outside of the hero image section */
+	height: 1010px;
+	background: #FFFFFF;
+/*	white*/
+	margin: auto; /* makes sure that the section is centered on the page */
+}
+
+.oneA {
+	width: 100vw;
+	height: 150vh;
+	background: url(../images/map.png)no-repeat center scroll;
+	margin: auto;
+	align-content: center;
+	position: relative;
+}
+
+/*2024 review*/ 
+
+.two {
+	width: 100vw;
+	height: 120vh;
+	background: white;
+	margin: auto;
+
+.twoA {
+	width: 300px;
+	height:75px;
+	background: yellow;
+	margin: auto;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 680px;
+}
+
+.twoAa {
+	width: 90px;
+	height:90px;
+	border-radius: 50%;
+	background: yellow;
+	margin: auto;
+	position: absolute;
+	left: -10px;
+	transform: translateX(-50%);
+	top: -10px;
+}
+
+.twoB {
+	width: 300px;
+	height:75px;
+	background: yellow;
+	margin: auto;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 580px;
+}
+
+.twoBb {
+	width: 90px;
+	height:90px;
+	border-radius: 50%;
+	background: yellow;
+	margin: auto;
+	position: absolute;
+	left: -10px;
+	transform: translateX(-50%);
+	top: -10px;
+}
+
+.twoC {
+	width: 300px;
+	height:75px;
+	background: yellow;
+	margin: auto;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 480px;
+}
+
+.twoCc {
+	width: 90px;
+	height:90px;
+	border-radius: 50%;
+	background: yellow;
+	margin: auto;
+	position: absolute;
+	left: -10px;
+	transform: translateX(-50%);
+	top: -10px;
+}
+
+
+.twoD {
+	width: 300px;
+	height:50px;
+	background: yellow;
+	margin: auto;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 400px;
+}
+
+.twoDd {
+	width: 70px;
+	height:70px;
+	border-radius: 50%;
+	background: yellow;
+	margin: auto;
+	position: absolute;
+	left: -10px;
+	transform: translateX(-50%);
+	top: -10px;
+}
+
+.twoE {
+	width: 300px;
+	height:50px;
+	background: yellow;
+	margin: auto;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 325px;
+}
+
+.twoEe {
+	width: 70px;
+	height:70px;
+	border-radius: 50%;
+	background: yellow;
+	margin: auto;
+	position: absolute;
+	left: -10px;
+	transform: translateX(-50%);
+	top: -10px;
+}
+
+.twoF {
+	width: 300px;
+	height:50px;
+	background: yellow;
+	margin: auto;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 250px;
+}
+
+.twoFf {
+	width: 70px;
+	height:70px;
+	border-radius: 50%;
+	background: yellow;
+	margin: auto;
+	position: absolute;
+	left: -10px;
+	transform: translateX(-50%);
+	top: -10px;
+}
+
+.twoG {
+	width: 300px;
+	height:50px;
+	background: black;
+	margin: auto;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 150px;
+}
+
+.twoH {
+	width: 300px;
+	height:50px;
+	background: black;
+	margin: auto;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 75px;
+}
+
+
+}
+
+.three {
+	width: 100vw;
+	height: 600px;
+	background: white;
+	margin: auto;
+}
+
+.threeA {
+	width: 300px;
+	height:50px;
+	background: black;
+	margin: auto;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 75px;
+}
+
+.four {
+	width: 100vw;
+	height: 900px;
+/*	background: white;*/
+	margin: auto;
+}
+
+.fourA { /* this is the hero image area */
+	width: 100vw;
+	height: 100vh;
+	background: url(../images/news.png)no-repeat center fixed;
+	position: absolute;
+	z-index: 3;
+	transform: translateX(-50%);
+	left: 640px;
+	top: 100px;
+}
+
+.footer {
+	width: 100vw;
+	height: 100px;
+	background: yellow;
+}
